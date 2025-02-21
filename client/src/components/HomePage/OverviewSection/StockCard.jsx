@@ -12,7 +12,7 @@ const StockCard = ({ name, price, change, volume, isUp }) => {
 
       {/* Price and Percentage Change */}
       <div className="flex justify-between items-center">
-        <p className="text-gray-700 text-lg font-medium">${price.toFixed(2)}</p>
+        <p className="text-gray-700 text-lg font-medium"> ₹{price.toFixed(2)}</p>
         <div
           className={`flex items-center rounded-md px-3 py-1 font-semibold 
           ${isUp ? "text-green-700 bg-green-100" : "text-red-700 bg-red-100"}`}
